@@ -34,11 +34,8 @@ var x = setInterval(function() {
     
   // Output the result in an element with id="demo"
   document.getElementById("Shutong_quarantine").innerHTML = 
-  " ♫.(◕∠◕).♫ ♫.(◕∠◕).♫ ♫.(◕∠◕).♫ ♫.(◕∠◕).♫ ♫.(◕∠◕).♫\n" + "距離姝彤出閘還有";
-  document.getElementById("Shutong_quarantine").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-  document.getElementById("Shutong_quarantine").innerHTML =
-  "請村民到指定場合避難"
+  " ♫.(◕∠◕).♫ ♫.(◕∠◕).♫ ♫.(◕∠◕).♫ ♫.(◕∠◕).♫ ♫.(◕∠◕).♫\n" + "距離姝彤出閘還有 \n" + days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s \n" + "請村民到指定場合避難"
     
   // If the count down is over, write some text 
   if (distance < 0) {
