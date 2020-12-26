@@ -15,7 +15,7 @@ p {
 
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("Dec 28, 2020 00:00:00").getTime();
+var countDownDate = new Date("Dec 28, 2020 00:00:00 GMT+08:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -34,8 +34,8 @@ var x = setInterval(function() {
     
   // Output the result in an element with id="demo"
   document.getElementById("Shutong_quarantine").innerHTML = 
-  " ♫.(◕∠◕).♫ ♫.(◕∠◕).♫ ♫.(◕∠◕).♫ ♫.(◕∠◕).♫ ♫.(◕∠◕).♫" + "<br />"  + "距離姝彤出閘還有" + "<br />"  + days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s " + "<br />"  + "請村民到指定場合避難"
+  " ♫.(◕∠◕).♫ ♫.(◕∠◕).♫ " + "<br />"  + "距離姝彤出閘剩餘" + "<br />"  + days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s " + "<br />"  + "請村民到指定場合避難" + "<br />" + "♫.(◕∠◕).♫ ♫.(◕∠◕).♫"
     
   // If the count down is over, write some text 
   if (distance < 0) {
