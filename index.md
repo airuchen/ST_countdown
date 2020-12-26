@@ -40,7 +40,7 @@ var x = setInterval(function() {
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("Shutong_quarantine").innerHTML = "٩(●˙▿˙●)۶…⋆ฺ٩(●˙▿˙●)۶…⋆ฺ٩(●˙▿˙●)۶…⋆ฺ٩(●˙▿˙●)۶…⋆ฺ " + "<br />" + "恭喜姝彤，賀喜姝彤";
+    document.getElementById("Shutong_quarantine").innerHTML = "٩(●˙▿˙●)۶…⋆ฺ٩(●˙▿˙●)۶…⋆ " + "<br />" + "恭喜姝彤，賀喜姝彤" + "<br />" + " ฺ٩(●˙▿˙●)۶…⋆ฺ٩(●˙▿˙●)۶…⋆ฺ";
   }
 }, 1000);
 </script>
