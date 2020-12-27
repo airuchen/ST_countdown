@@ -60,7 +60,7 @@ var x = setInterval(function() {
   var distance = countDownDate - now;
 
   // Backdoor test 
-  distance = -distance
+  // distance = -distance
 
     
   // Time calculations for days, hours, minutes and seconds
@@ -143,12 +143,12 @@ var x = setInterval(function() {
   }
   // If the count down is over, write some text 
   else if (distance <= 0) {
-    if (-(seconds)%6 < 3) {
-      clearInterval(x);
-      document.getElementById("Shutong_quarantine").innerHTML =   "٩(●˙▿˙●)۶…⋆ฺ " + "<br />" + "恭喜姝彤，賀喜姝彤" + "<br />" + `<iframe src="https://giphy.com/embed/3oz8xAFtqoOUUrsh7W" width="480" height="320" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/studiosoriginals-3oz8xAFtqoOUUrsh7W">via GIPHY</a></p>` + "<br />" + `<iframe src="https://giphy.com/embed/3o6fJ1BM7R2EBRDnxK" width="480" height="234" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/congratulations-congrats-3o6fJ1BM7R2EBRDnxK">via GIPHY</a></p>`;
+    if (-(seconds)%2 == 0) {
+      // clearInterval(x);
+      document.getElementById("Shutong_quarantine").innerHTML =   "٩(●˙▿˙●)۶…⋆ฺ " + "<br />" + "恭喜姝彤，賀喜姝彤" + "<br />" + `<iframe src="https://giphy.com/embed/3oz8xAFtqoOUUrsh7W" width="480" height="320" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>` + "<br />" + `<iframe src="https://giphy.com/embed/3o6fJ1BM7R2EBRDnxK" width="480" height="234" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>`;
     } else {
-      clearInterval(x);
-      document.getElementById("Shutong_quarantine").innerHTML = "⋆…ฺ٩(●˙▿˙●)۶ " + "<br />" + "恭喜姝彤，賀喜姝彤" + "<br />" + `<iframe src="https://giphy.com/embed/3oz8xAFtqoOUUrsh7W" width="480" height="320" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/studiosoriginals-3oz8xAFtqoOUUrsh7W">via GIPHY</a></p>` + "<br />" + `<iframe src="https://giphy.com/embed/3o6fJ1BM7R2EBRDnxK" width="480" height="234" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/congratulations-congrats-3o6fJ1BM7R2EBRDnxK">via GIPHY</a></p>`;
+      // clearInterval(x);
+      document.getElementById("Shutong_quarantine").innerHTML = "⋆…ฺ٩(●˙▿˙●)۶ " + "<br />" + "恭喜姝彤，賀喜姝彤" + "<br />" + `<iframe src="https://giphy.com/embed/3oz8xAFtqoOUUrsh7W" width="480" height="320" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>` + "<br />" + `<iframe src="https://giphy.com/embed/3o6fJ1BM7R2EBRDnxK" width="480" height="234" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>`;
     }
   }
 }, 1000);
