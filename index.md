@@ -74,7 +74,7 @@ var x = setInterval(function() {
   var distance = countDownDate - now;
 
   // Backdoor test 
-  distance = -distance
+  // distance = -distance
 
     
   // Time calculations for days, hours, minutes and seconds
@@ -162,7 +162,7 @@ var x = setInterval(function() {
     //   document.getElementById("Shutong_quarantine").innerHTML =   "٩(●˙▿˙●)۶…⋆ฺ " + "<br />" + "恭喜姝彤，賀喜姝彤" + "<br />" + `<iframe src="https://giphy.com/embed/3oz8xAFtqoOUUrsh7W" width="480" height="320" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>` + "<br />" + `<iframe src="https://giphy.com/embed/3o6fJ1BM7R2EBRDnxK" width="480" height="234" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>`+ `<button type="button" onclick="alert('回家的資格')">領取獎勵</button>`;
     // } else {
       clearInterval(x);
-      document.getElementById("Shutong_quarantine").innerHTML = "⋆…ฺ٩(●˙▿˙●)۶ " + "<br />" + "恭喜姝彤，賀喜姝彤" + "<br />" + `<input type="button" class="button" onclick="alert('回家的資格')" value="領取獎勵">` + `<iframe src="https://giphy.com/embed/3oz8xAFtqoOUUrsh7W" width="480" height="320" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>` + "<br />" + `<iframe src="https://giphy.com/embed/3o6fJ1BM7R2EBRDnxK" width="480" height="234" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>`;
+      document.getElementById("Shutong_quarantine").innerHTML = "⋆…ฺ٩(●˙▿˙●)۶ " + "<br />" + "恭喜姝彤，賀喜姝彤" + "<br />" + `<input type="button" class="button" onclick="alert('回家的資格')" value="領取獎勵">` + "<br />" + `<iframe src="https://giphy.com/embed/3oz8xAFtqoOUUrsh7W" width="480" height="320" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>` + "<br />" + `<iframe src="https://giphy.com/embed/3o6fJ1BM7R2EBRDnxK" width="480" height="234" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>`;
     // }
   }
 }, 1000);
