@@ -37,7 +37,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 40px;
+  font-size: 35px;
 }
 </style>
 </head>
