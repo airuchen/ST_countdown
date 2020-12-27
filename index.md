@@ -10,8 +10,8 @@ p {
 }
 .base-timer {
     position: relative;
-    height: 500px;
-    width: 500px;
+    height: 400px;
+    width: 400px;
   }
 .base-timer__circle {
   fill: none;
@@ -31,13 +31,13 @@ p {
 }
 .base-timer__label {
   position: absolute;
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   top: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 45px;
+  font-size: 40px;
 }
 </style>
 </head>
