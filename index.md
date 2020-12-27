@@ -8,9 +8,9 @@ p {
   margin-top: 0px; 
 }
 .base-timer {
-    position: relative;
+    position: center;
     height: 300px;
-    width: 300px;
+    width: 300px; 
   }
 .base-timer__circle {
   fill: none;
