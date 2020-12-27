@@ -4,13 +4,14 @@
 <style>
 p {
   text-align: center;
-  font-size: 25px;
+  font-size: 30px;
   margin-top: 0px; 
+  font-family: "Microsoft JhengHei", Arial, serif;
 }
 .base-timer {
-    position: center;
-    height: 300px;
-    width: 300px; 
+    position: relative;
+    height: 500px;
+    width: 500px;
   }
 .base-timer__circle {
   fill: none;
@@ -30,25 +31,13 @@ p {
 }
 .base-timer__label {
   position: absolute;
-  width: 300px;
-  height: 300px;
+  width: 500px;
+  height: 500px;
   top: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 25px;
-}
-.base-timer__path-remaining {
-  /* Just as thick as the original ring */
-  stroke-width: 7px;
-  stroke-linecap: round;
-  transform: rotate(90deg);
-  transform-origin: center;
-  transition: 1s linear all;
-  stroke: currentColor;
-}
-.base-timer__svg {
-  transform: scaleX(-1);
+  font-size: 45px;
 }
 </style>
 </head>
@@ -71,7 +60,7 @@ var x = setInterval(function() {
   var distance = countDownDate - now;
 
   // Backdoor test 
-  // distance = -1
+  distance = -1
 
     
   // Time calculations for days, hours, minutes and seconds
@@ -96,7 +85,7 @@ var x = setInterval(function() {
       <div class="base-timer">
         <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
           <g class="base-timer__circle">
-            <circle class="base-timer__path-elapsed_0" cx="50" cy="50" r="45"></circle>
+            <circle class="base-timer__path-elapsed_0" cx="50" cy="50" r="46"></circle>
           </g>
         </svg>
         <span id="base-timer-label" class="base-timer__label">
@@ -111,7 +100,7 @@ var x = setInterval(function() {
       <div class="base-timer">
         <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
           <g class="base-timer__circle">
-            <circle class="base-timer__path-elapsed_1" cx="50" cy="50" r="45"></circle>
+            <circle class="base-timer__path-elapsed_1" cx="50" cy="50" r="46"></circle>
           </g>
         </svg>
         <span id="base-timer-label" class="base-timer__label">
@@ -127,7 +116,7 @@ var x = setInterval(function() {
       <div class="base-timer">
         <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
           <g class="base-timer__circle">
-            <circle class="base-timer__path-elapsed_0" cx="50" cy="50" r="45"></circle>
+            <circle class="base-timer__path-elapsed_0" cx="50" cy="50" r="46"></circle>
           </g>
         </svg>
         <span id="base-timer-label" class="base-timer__label">
@@ -142,7 +131,7 @@ var x = setInterval(function() {
       <div class="base-timer">
         <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
           <g class="base-timer__circle">
-            <circle class="base-timer__path-elapsed_2" cx="50" cy="50" r="45"></circle>
+            <circle class="base-timer__path-elapsed_2" cx="50" cy="50" r="46"></circle>
           </g>
         </svg>
         <span id="base-timer-label" class="base-timer__label">
