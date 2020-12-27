@@ -60,7 +60,7 @@ var x = setInterval(function() {
   var distance = countDownDate - now;
 
   // Backdoor test 
-  distance = -1
+  // distance = -1
 
     
   // Time calculations for days, hours, minutes and seconds
