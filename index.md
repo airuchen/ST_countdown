@@ -74,7 +74,7 @@ var x = setInterval(function() {
   var distance = countDownDate - now;
 
   // Backdoor test 
-  // distance = -distance
+  distance = -distance
 
     
   // Time calculations for days, hours, minutes and seconds
