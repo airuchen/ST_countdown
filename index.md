@@ -39,6 +39,20 @@ p {
   justify-content: center;
   font-size: 35px;
 }
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: "Microsoft JhengHei", Arial, serif;
+
+}
 </style>
 </head>
 <body>
@@ -143,13 +157,13 @@ var x = setInterval(function() {
   }
   // If the count down is over, write some text 
   else if (distance <= 0) {
-    if (-(seconds)%2 == 0) {
-      // clearInterval(x);
-      document.getElementById("Shutong_quarantine").innerHTML =   "٩(●˙▿˙●)۶…⋆ฺ " + "<br />" + "恭喜姝彤，賀喜姝彤" + "<br />" + `<iframe src="https://giphy.com/embed/3oz8xAFtqoOUUrsh7W" width="480" height="320" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>` + "<br />" + `<iframe src="https://giphy.com/embed/3o6fJ1BM7R2EBRDnxK" width="480" height="234" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>`;
-    } else {
-      // clearInterval(x);
-      document.getElementById("Shutong_quarantine").innerHTML = "⋆…ฺ٩(●˙▿˙●)۶ " + "<br />" + "恭喜姝彤，賀喜姝彤" + "<br />" + `<iframe src="https://giphy.com/embed/3oz8xAFtqoOUUrsh7W" width="480" height="320" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>` + "<br />" + `<iframe src="https://giphy.com/embed/3o6fJ1BM7R2EBRDnxK" width="480" height="234" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>`;
-    }
+    // if (-(seconds)%2 == 0) {
+    //   clearInterval(x);
+    //   document.getElementById("Shutong_quarantine").innerHTML =   "٩(●˙▿˙●)۶…⋆ฺ " + "<br />" + "恭喜姝彤，賀喜姝彤" + "<br />" + `<iframe src="https://giphy.com/embed/3oz8xAFtqoOUUrsh7W" width="480" height="320" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>` + "<br />" + `<iframe src="https://giphy.com/embed/3o6fJ1BM7R2EBRDnxK" width="480" height="234" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>`+ `<button type="button" onclick="alert('回家的資格')">領取獎勵</button>`;
+    // } else {
+      clearInterval(x);
+      document.getElementById("Shutong_quarantine").innerHTML = "⋆…ฺ٩(●˙▿˙●)۶ " + "<br />" + "恭喜姝彤，賀喜姝彤" + "<br />" + `<input type="button" class="button" onclick="alert('回家的資格')" value="領取獎勵">` + `<iframe src="https://giphy.com/embed/3oz8xAFtqoOUUrsh7W" width="480" height="320" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>` + "<br />" + `<iframe src="https://giphy.com/embed/3o6fJ1BM7R2EBRDnxK" width="480" height="234" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>`;
+    // }
   }
 }, 1000);
 </script>
