@@ -91,6 +91,7 @@ var x = setInterval(function() {
   // hours = 0;
   // minutes = 0;
   // seconds = 0;
+  // distance = 0;
   if (distance > 0) {
   if (days > 0 || hours > 5) {
     if ((seconds%10) < 5){
