@@ -68,106 +68,30 @@ var countDownDate = new Date("Dec 28, 2020 11:51:00 GMT+08:00").getTime();
 var x = setInterval(function() {
 
   // Get today's date and time
-  var now = new Date().getTime();
+  // var now = new Date().getTime();
     
   // Find the distance between now and the count down date
-  var distance = countDownDate - now;
+  // var distance = countDownDate - now;
 
   // Backdoor test 
   // distance = -distance
 
     
   // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  function formatTimeLeft() {
-    return `${days} D, ${hours} H, ${minutes} M, ${seconds} S`;
-  }
-
-  // Backdoor test 
-  // days = 0;
-  // hours = 0;
-  // minutes = 0;
-  // seconds = 0;
-  // distance = 0;
-  if (distance > 0) {
-  if (days > 0 || hours > 5) {
-    if ((seconds%10) < 5){
-      document.getElementById("Shutong_quarantine").innerHTML = 
-    `
-      <div class="base-timer">
-        <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-          <g class="base-timer__circle">
-            <circle class="base-timer__path-elapsed_0" cx="50" cy="50" r="46"></circle>
-          </g>
-        </svg>
-        <span id="base-timer-label" class="base-timer__label">
-        ${"姝彤出閘倒數 <br />" + formatTimeLeft() + "<br /> ﾚ(ﾟ∀ﾟ;)ﾍ"}
-        </span>
-      </div>
-    `
-    }
-    else{
-      document.getElementById("Shutong_quarantine").innerHTML = 
-    `
-      <div class="base-timer">
-        <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-          <g class="base-timer__circle">
-            <circle class="base-timer__path-elapsed_1" cx="50" cy="50" r="46"></circle>
-          </g>
-        </svg>
-        <span id="base-timer-label" class="base-timer__label">
-        ${"姝彤出閘倒數 <br />" + formatTimeLeft() + "<br />　ﾍ( ﾟ∀ﾟ;)ﾉ"}
-        </span>
-      </div>
-    `}
-  }
-  else if (hours <= 5 && hours >=0){
-    if ((seconds%2) == 1){
-      document.getElementById("Shutong_quarantine").innerHTML = 
-    `
-      <div class="base-timer">
-        <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-          <g class="base-timer__circle">
-            <circle class="base-timer__path-elapsed_0" cx="50" cy="50" r="46"></circle>
-          </g>
-        </svg>
-        <span id="base-timer-label" class="base-timer__label">
-        ${"姝彤出閘倒數 <br />" + formatTimeLeft() + "<br /> ﾚ(ﾟ∀ﾟ;)ﾍ"}
-        </span>
-      </div>
-    `
-    }
-    else{
-      document.getElementById("Shutong_quarantine").innerHTML = 
-    `
-      <div class="base-timer">
-        <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-          <g class="base-timer__circle">
-            <circle class="base-timer__path-elapsed_2" cx="50" cy="50" r="46"></circle>
-          </g>
-        </svg>
-        <span id="base-timer-label" class="base-timer__label">
-        ${"姝彤出閘倒數 <br />" + formatTimeLeft() + "<br />　ﾍ( ﾟ∀ﾟ;)ﾉ"}
-        </span>
-      </div>
-    `}
-  }
-  }
-  // If the count down is over, write some text 
-  else if (distance <= 0) {
-    // if (-(seconds)%2 == 0) {
-    //   clearInterval(x);
-    //   document.getElementById("Shutong_quarantine").innerHTML =   "٩(●˙▿˙●)۶…⋆ฺ " + "<br />" + "恭喜姝彤，賀喜姝彤" + "<br />" + `<iframe src="https://giphy.com/embed/3oz8xAFtqoOUUrsh7W" width="480" height="320" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>` + "<br />" + `<iframe src="https://giphy.com/embed/3o6fJ1BM7R2EBRDnxK" width="480" height="234" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>`+ `<button type="button" onclick="alert('回家的資格')">領取獎勵</button>`;
-    // } else {
-      clearInterval(x);
-      document.getElementById("Shutong_quarantine").innerHTML = "⋆…ฺ٩(●˙▿˙●)۶ " + "<br />" + "恭喜姝彤，賀喜姝彤" + "<br />" + `<input type="button" class="button" onclick="alert('回家的資格')" value="領取獎勵">` + "<br />" + `<iframe src="https://giphy.com/embed/3oz8xAFtqoOUUrsh7W" width="480" height="320" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>` + "<br />" + `<iframe src="https://giphy.com/embed/3o6fJ1BM7R2EBRDnxK" width="480" height="234" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>`;
-    // }
-  }
+  // var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  // var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  // var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  // var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  // function formatTimeLeft() {
+  //   return `${days} D, ${hours} H, ${minutes} M, ${seconds} S`;
+  // }
 }, 1000);
 </script>
 
 </body>
 </html>
+
+<center>
+<p>Hold on, almost there</p>
+<iframe src="https://giphy.com/embed/l0NwF1dnk7GRz3pK0" width="480" height="373" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+</center>
