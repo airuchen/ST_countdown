@@ -92,6 +92,7 @@ var x = setInterval(function() {
 </html>
 
 <center>
-<p>Hold on, almost there</p>
-<iframe src="https://giphy.com/embed/l0NwF1dnk7GRz3pK0" width="480" height="373" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+<p>FREE AT LAST</p>
+
+<iframe src="https://giphy.com/embed/l3vR3FaH4adpUG9eE" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 </center>
